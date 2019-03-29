@@ -1,0 +1,24 @@
+<nav>
+  <a (click)="popularMovies()">Popular Movies</a>
+  <a (click)="topMovies()">Top Rated Movies</a>
+  <a (click)="playingMovies()">Now Playing Movies</a>
+  <a (click)="upcomingMovies()">Upcoming Movies</a>
+
+  <br/>
+  <br/>
+</nav>
+<section class="menu">
+  <div class="movie-list">
+    <div class="movie-group">
+      <ul class="movies">
+        <li *ngFor="let movie of movies" [class.selected]="movie === selectedMovie" (click)="onSelect(movie)">
+          <div class="clearfix float-my-children">
+            <img class="img-responsive img-rounded poster" src={{movie.poster_path}} width="8%" />
+            {{movie.title}} ({{movie.release_date}})
+            <br/> {{movie.vote_average}} &#9734;
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

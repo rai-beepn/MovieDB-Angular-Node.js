@@ -1,0 +1,63 @@
+/* div {
+    width: 200px;
+  }
+   */
+
+h2 {
+    font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font: 200 17px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 3px solid rgb(7, 154, 199); */
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease
+}
+
+
+
+/* tell the container's children to float left: */
+
+.float-my-children>* {
+    float: left;
+    margin-right: 5px;
+}
+
+
+
+
+.clearfix {
+    *zoom: 1/* for IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+nav a {
+    padding: 8px;
+    background-color:#66B9BF;
+}
+
+nav a:hover {
+    background-color: #07889B;
+}

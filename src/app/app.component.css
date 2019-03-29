@@ -1,0 +1,21 @@
+nav {
+    font-size: 25px;
+    margin: 5px;
+
+    
+}
+
+nav a {
+    padding: 8px;
+    background-color: #07889B;
+    
+}
+
+nav a:hover {
+    background-color: #07889B;
+
+}
+h1,p{
+    font-family: 'Trebuchet MS';
+    /* background-color: #66B9BF; */
+}
